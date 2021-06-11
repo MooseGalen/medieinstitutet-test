@@ -1,0 +1,124 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: black;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lobster", cursive;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+p,
+button {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(103 97 97 / 100%);
+  align-items: center;
+  padding: 10px;
+  position: sticky;
+  top: 0px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-family: "Lobster", cursive;
+}
+
+.films-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 50px;
+  justify-content: space-between;
+  max-height: 1400px;
+}
+
+.film-block:hover {
+  box-shadow: 0px 0px 11px 6px #ffffff96;
+}
+
+.film-block {
+  transition: box-shadow 0.4s ease-in-out;
+  width: 28%;
+  margin-bottom: 30px;
+}
+
+.film-block > img {
+  height: auto;
+  width: 100%;
+}
+
+.image-container {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.text-container {
+  padding: 10px;
+  padding-bottom: 15px;
+}
+
+button {
+  background-color: skyblue;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay > div {
+  border-radius: 5px;
+  width: 50%;
+  height: 300px;
+  background-color: white;
+}
+
+@media screen and (max-width: 425px) {
+  .film-block {
+    width: 100%;
+  }
+}
